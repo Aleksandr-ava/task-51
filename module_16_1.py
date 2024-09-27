@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/user/{admin}")
+@app.get("/user/admin")
 async def welcome_admin() -> dict:
     return {"message": "Вы вошли как администратор"}
 
